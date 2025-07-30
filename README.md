@@ -1,1 +1,3 @@
-# the-coffee-machine
+# The Coffee Machine Application
+
+Created in Python
