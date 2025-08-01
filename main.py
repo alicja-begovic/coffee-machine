@@ -32,16 +32,16 @@ resources = {
     "coffee": 100,
 }
 
-#zatrzymuje działanie maszyny jeśli nie ma wystarczającej ilości składników
 def is_resources_sufficient(order_ingredients):
+    """Return True if there is enough ingredients and False otherwise."""
     for item in order_ingredients:
         if order_ingredients[item] >= resources[item]:
             print(f"Sorry there is not enough {item}.")
             return False
     return True
     
-#zwraca przeliczoną wartość wrzuconych pieniędzy
 def process_coins():
+    """Return sum of insert coins."""
     print("Please insert coins.")
     total = int(input("How many quarters?: ")) * 0.25
     total += int(input("How many dimes?: ")) * 0.1
